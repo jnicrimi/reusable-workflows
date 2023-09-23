@@ -1,6 +1,6 @@
 ---
 
-name: Called Preset PR
+name: called-preset-pr
 on:
   workflow_call:
     secrets:
