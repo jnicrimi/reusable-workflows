@@ -31,7 +31,7 @@ jobs:
     needs: [set-assignees]
     if: ${{ always() && github.actor != 'dependabot[bot]' }}
     steps:
-      - name: Slack Notification
+      - name: Slack notification
         uses: slackapi/slack-github-action@v1.24.0
         with:
           payload: |
