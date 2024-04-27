@@ -10,6 +10,7 @@ on:
         required: true
       slack_webhook_url:
         required: true
+permissions: write-all
 jobs:
   set-assignees:
     runs-on: ubuntu-latest
