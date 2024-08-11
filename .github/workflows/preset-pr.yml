@@ -14,5 +14,3 @@ jobs:
     uses: ./.github/workflows/called-preset-pr.yml
     secrets:
       token: ${{ secrets.GITHUB_TOKEN }}
-      slack_id: ${{ secrets.SLACK_ID }}
-      slack_webhook_url: ${{ secrets.SLACK_WEBHOOK_URL }}
