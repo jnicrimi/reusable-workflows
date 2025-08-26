@@ -1,5 +1,3 @@
----
-
 name: called-preset-pr
 on:
   workflow_call:
