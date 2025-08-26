@@ -4,7 +4,9 @@ on:
     secrets:
       token:
         required: true
-permissions: write-all
+permissions:
+  pull-requests: write
+  issues: write
 jobs:
   set-assignees:
     runs-on: ubuntu-latest
