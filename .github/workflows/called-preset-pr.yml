@@ -10,7 +10,7 @@ permissions:
 jobs:
   set-assignees:
     runs-on: ubuntu-latest
-    if: ${{ toJSON(github.event.pull_request.assignees) == '[]' && github.actor != 'dependabot[bot]' }}
+    if: ${{ toJSON(github.event.pull_request.assignees) == '[]' && !endsWith(github.actor, '[bot]') }}
     steps:
       - name: Set assignees
         uses: actions/github-script@v8
