@@ -13,7 +13,7 @@ jobs:
     if: ${{ toJSON(github.event.pull_request.assignees) == '[]' && !endsWith(github.actor, '[bot]') }}
     steps:
       - name: Set assignees
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           github-token: ${{ secrets.token }}
           script: |
